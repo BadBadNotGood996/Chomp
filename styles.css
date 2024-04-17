@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: grey;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.grid {
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+
+.hover:hover {
+    transform: scale(1.1);
+    opacity: 50%;
+
+    transition: all 0.2s ease-in-out;
+}
+
