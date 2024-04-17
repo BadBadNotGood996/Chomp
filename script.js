@@ -31,16 +31,6 @@ grid.addEventListener('mouseover', function (e) {
 function addHoverFx (biscuit) {
     const biscuitVal = biscuit.classList[0]
 
-    // if (biscuitVal <= 4) {
-    //     console.log(biscuitVal, 'A')
-    // } else if (biscuitVal <= 8) {
-    //     console.log(biscuitVal, 'B')
-    // } else if (biscuitVal <= 12) {
-    //     console.log(biscuitVal, 'C')
-    // } else if (biscuitVal <= 16) {
-    //     console.log(biscuitVal, 'D')
-    // }
-
     console.log(biscuitVal)
 
     biscuit.classList.add('hover')
