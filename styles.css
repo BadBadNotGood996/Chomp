@@ -28,9 +28,11 @@ img {
 
 
 .hover:hover {
-    transform: scale(1.1);
     opacity: 50%;
 
     transition: all 0.2s ease-in-out;
 }
 
+.eaten {
+    opacity: 50%;
+}
