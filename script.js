@@ -44,15 +44,15 @@ function addHoverFx(el) {
 
     for (let i = 0; i <= gridArray.length; i++) {
         if (gridArray[i] === 1) {
-            el.currentTarget.childNodes[i + 1].classList.add('eaten')
+            el.currentTarget.childNodes[i + 1].classList.add('hover')
         } else if (gridArray[i] === 0) {
-            el.currentTarget.childNodes[i + 1].classList.remove('eaten')
+            el.currentTarget.childNodes[i + 1].classList.remove('hover')
         }
     }
 
     el.currentTarget.addEventListener('mouseout', function (e) {
         gridArray[currentPos] = 0
-        e.currentTarget.childNodes[currentPos + 1].classList.remove('eaten')
+        e.currentTarget.childNodes[currentPos + 1].classList.remove('hover')
     })
 }
 
